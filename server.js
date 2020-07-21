@@ -3,8 +3,11 @@ const express = require("express");
 const app = express();
 
 // "/" is the root and the function is a callback function
+// function(request, respond) often shortend to function(req, res)
 app.get("/", function(request, respond){
-    console.log(request);
+    //console.log(request);
+    // respond can send plain text or html
+    respond.send("<h1> Hello World </h1>");
 
 });
 
