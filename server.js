@@ -7,6 +7,7 @@ const app = express();
 app.get("/", function(request, respond){
     //console.log(request);
     // respond can send plain text or html
+    // server info
     respond.send("<h1> Hello World </h1>");
 
 });
